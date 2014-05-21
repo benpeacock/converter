@@ -50,6 +50,3 @@ gem 'unicorn'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-# Parse REST API Connector
-gem 'parse_resource'
