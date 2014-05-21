@@ -50,3 +50,6 @@ gem 'unicorn'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Use HTTParty to consume REST API
+gem 'httparty', '~> 0.13.1'
