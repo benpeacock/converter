@@ -1,10 +1,13 @@
 <h1>Welcome#index</h1>
-<%= form_tag @unit do %>
+<%= form_tag do %>
 	<%= label_tag(:value, "Convert:") %>
 	<%= text_field_tag(:value) %>
-	<%= select_tag(:initial_unit_id, options_for_select([['mph', 1], ['kph', 2]])) %>
+	<%= select_tag(:initial_id, options_for_select([['mph', 1], ['kph', 2]])) %>
 	<%= ' into ' %>
-	<%= select_tag(:desired_unit_id, options_for_select([['mph', 1], ['kph', 2]])) %>
+	<%= select_tag(:desired_id, options_for_select([['mph', 1], ['kph', 2]])) %>
 
 	<%= submit_tag("Convert") %>
+<% end %>
+<% if @unit %>
+  <%= @unit %>
 <% end %>
