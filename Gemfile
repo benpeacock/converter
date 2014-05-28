@@ -53,3 +53,6 @@ gem 'unicorn'
 
 # Use HTTParty to consume REST API
 gem 'httparty', '~> 0.13.1'
+
+# Use gem to connect to Parse API
+gem 'parse_resource', '~> 1.8.0'
