@@ -1,6 +1,8 @@
 Converter::Application.routes.draw do
-  resources :stacks
+  resources :units
 
+  resources :stacks
+  resources :objs
   get "welcome/index"
   post "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
